@@ -2,7 +2,7 @@ cask "choochoo" do
   version "0.21.0"
   sha256 "5631b062e542c8d1403d6de39dc3cca983474f2b6e4e1bd9434eb55cc2bd2cbe"
 
-  url "https://install.choochoo.cc/dl/v#{version}/ChooChoo_#{version}_aarch64.dmg"
+  url "https://install.choochoo.cc/dl/desktop/v#{version}/ChooChoo_#{version}_aarch64.dmg"
   name "ChooChoo"
   desc "ChooChoo desktop app"
   homepage "https://choochoo.cc"
