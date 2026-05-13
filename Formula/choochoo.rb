@@ -1,5 +1,5 @@
 class Choochoo < Formula
-  desc "ChooChoo CLI"
+  desc "Evaluate and optimize AI coding agents"
   homepage "https://choochoo.cc"
   version "0.21.0"
 

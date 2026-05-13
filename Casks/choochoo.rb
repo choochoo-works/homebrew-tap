@@ -7,6 +7,10 @@ cask "choochoo" do
   desc "ChooChoo desktop app"
   homepage "https://choochoo.cc"
 
+  livecheck do
+    skip "Self-updates via built-in Tauri updater"
+  end
+
   depends_on arch: :arm64
   depends_on macos: ">= :big_sur"
 
