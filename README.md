@@ -26,7 +26,7 @@ Installs `ChooChoo.app` into `/Applications`. The app self-updates via its built
 
 ## Updating
 
-Releases are tagged from [`choochoo-works/choochoo_works`](https://github.com/choochoo-works/choochoo_works). This tap is bumped automatically on each new release tag.
+Releases are tagged from [`choochoo-works/choochoo_works`](https://github.com/choochoo-works/choochoo_works). Bump this tap after each new release tag by updating the formula/cask versions and SHA-256 checksums from the published release artifacts.
 
 ## Layout
 
