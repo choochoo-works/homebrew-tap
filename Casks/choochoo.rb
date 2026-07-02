@@ -1,20 +1,27 @@
 cask "choochoo" do
-  version "0.21.0"
-  sha256 "5631b062e542c8d1403d6de39dc3cca983474f2b6e4e1bd9434eb55cc2bd2cbe"
+  version "0.23.6"
 
-  url "https://install.choochoo.cc/dl/desktop/v#{version}/ChooChoo_#{version}_aarch64.dmg"
+  on_arm do
+    sha256 "905fb8648e8b4b65063a72da06591e5e931cc5bcbf2a90dbc74c2abcbdc08f08"
+
+    url "https://install.choochoo.cc/dl/desktop/v#{version}/ChooChoo_#{version}_aarch64.dmg"
+  end
+  on_intel do
+    sha256 "87e12694627138a4f306974ded6f1b0ab61318b935ae73f49daef1684e4c9c81"
+
+    url "https://install.choochoo.cc/dl/desktop/v#{version}/ChooChoo_#{version}_x64.dmg"
+  end
+
   name "ChooChoo"
-  desc "ChooChoo desktop app"
-  homepage "https://choochoo.cc"
+  desc "Desktop app"
+  homepage "https://choochoo.cc/"
 
   livecheck do
     skip "Self-updates via built-in Tauri updater"
   end
 
-  depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
-
   auto_updates true
+  depends_on macos: :big_sur
 
   app "ChooChoo.app"
 

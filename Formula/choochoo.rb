@@ -1,27 +1,27 @@
 class Choochoo < Formula
   desc "Evaluate and optimize AI coding agents"
   homepage "https://choochoo.cc"
-  version "0.21.0"
+  version "0.23.6"
 
   on_macos do
     on_arm do
       url "https://install.choochoo.cc/dl/v#{version}/choochoo_#{version}_darwin_arm64.tar.gz"
-      sha256 "08c92ab6aa0a3deb10c956cd1f630ee2b8a7deaac7df55866dee8752d5ef94b2"
+      sha256 "843d7bcbe7f77ee16f7728b909cfc7fd1b64f076d14a7cf410ca69395c35ae07"
     end
     on_intel do
       url "https://install.choochoo.cc/dl/v#{version}/choochoo_#{version}_darwin_amd64.tar.gz"
-      sha256 "725af61f278a706b76b6c6dd230aac282c4593f8e6dad947dbcd71a661903c22"
+      sha256 "0d076c70ae731aef4fa0ddd122df95e0e9879f25259c08747c42264b1af19501"
     end
   end
 
   on_linux do
     on_arm do
       url "https://install.choochoo.cc/dl/v#{version}/choochoo_#{version}_linux_arm64.tar.gz"
-      sha256 "e1d3ae102a7bc659b66d9680096923f0d7f8d3295c1da64bfc708390ccaefb93"
+      sha256 "ae3100eb9086470bcf65aa473aba19b8b27f2cffcec9b777995f16979cf7ad8f"
     end
     on_intel do
       url "https://install.choochoo.cc/dl/v#{version}/choochoo_#{version}_linux_amd64.tar.gz"
-      sha256 "fba60da31b1107d7aabd831548a74c0e7936e09099c348c55286c47540963a90"
+      sha256 "fbb0c927d324aa095e51afde6a680abcbd86ec1944e2321c468433b2bc319b5e"
     end
   end
 
